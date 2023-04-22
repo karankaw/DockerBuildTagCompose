@@ -5,6 +5,8 @@ services:
   foo:
     image: foo:latest
     entrypoint: python3 /python-hello/hello.py
+    volumes:
+      - ./python-bye:/python-hello
 
   redis:
     image: redis:7.0.8
