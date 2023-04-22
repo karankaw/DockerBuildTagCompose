@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+
+  foo:
+    image: foo:latest
+    entrypoint: python3 /python-hello/hello.py
+
+  redis:
+    image: redis:7.0.8
