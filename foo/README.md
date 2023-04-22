@@ -7,3 +7,7 @@
 - docker run -it --rm --name ok foo:latest ls 
 - date
 - python3 python-hello/hello.py
+- docker-compose up foo redis
+- docker image prune -a //Remove Ununsed and Dangling Images
+- docker image prune //Remove Dangling Images -  unused and having no names
+- docker-compose up redis foo //Starts 2 given services - foo, redis
