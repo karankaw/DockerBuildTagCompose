@@ -11,3 +11,5 @@
 - docker image prune -a //Remove Ununsed and Dangling Images
 - docker image prune //Remove Dangling Images -  unused and having no names
 - docker-compose up redis foo //Starts 2 given services - foo, redis
+
+- docker container ls  -a|grep Exited | cut -d " " -f 1 | xargs -I {} docker container rm {}
